@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Cormorant+Garamond:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+$gar: 'Cormorant Garamond', serif;
+$rob: 'Roboto', sans-serif;
+$segoe: 'Bad Script', cursive;
+$milk: #E1DECE;
+$black: #191919;
+
+
+@mixin text($ff, $fs, $fw, $fz, $lh, $col) {
+  @if $ff == $gar {
+    font-family: $gar;
+  }
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fz;
+  @if $lh > 0 {
+    line-height: $lh;
+  }
+  color: $col;
+}
+
+main {
+  background: $black;
+  position: relative;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.page__navSection {
+  position: relative;
+  min-height: 320px;
+  text-align: center;
+
+  &-textContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+  }
+
+  &-title {
+    @include text($rob, normal, 700, 40px, 45px, white)
+  }
+
+  &-desc {
+    @include text($rob, normal, 400, 14px, 22px, white)
+  }
+
+  &-bredcamb {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include text($rob, normal, 400, 14px, 28px, $milk)
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.fancybox__caption {
+  text-align: center;
+}
+
+@import "header";
+@import "aside";
+@import "home";
+@import "projects";
+@import "feedback";
+@import "info";
+@import "collections";
+@import "description";
+@import "steps";
+@import "partners";
+@import "about-us";
+@import "repair";
+@import "articles";
+@import "Art-MoreDetailed";
+@import "contacts";
+@import "footer";

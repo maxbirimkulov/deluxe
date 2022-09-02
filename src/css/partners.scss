@@ -1,0 +1,30 @@
+.partners{
+  padding: 276px 0 148px;
+  &__title{
+    display: flex;
+    justify-content: flex-end;
+    font-family: $gar;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 90px;
+  }
+  &__block{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    &-box{
+      }
+  }
+  &__logo{
+    max-width: 242px;
+  }
+}
+.desiderio__logo{
+  &:nth-child(2){
+    margin: 90px 0;
+  }
+
+}

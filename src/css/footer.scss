@@ -1,0 +1,64 @@
+.footer{
+  background-color: $black;
+  &__top{
+    padding: 60px 0 46px;
+    &-content{
+      display: flex;
+      column-gap: 80px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &-card{
+      width: calc(25% - 40px);
+      &-title{
+        @include text($rob, normal, 400, 15px, 18px, white);
+        margin-bottom: 14px;
+        &:nth-of-type(n+2){
+          margin-top: 30px;
+        }
+      }
+      &-tel{
+        @include text($rob, normal, 300, 15px, 25px, $milk);
+      }
+      &-icon{
+        color: $milk;
+        font-size: 30px;
+        transition: 0.2s;
+        &:hover{
+          color: white;
+          transition: 0.2s;
+        }
+      }
+      &-address{
+        @include text($rob, normal, 300, 15px, 25px, $milk);
+      }
+    }
+    &-map{
+      width: calc(50% - 80px);
+      height: 299px;
+      background-color: white;
+      border-radius: 20px;
+    }
+  }
+  &__bot{
+    padding: 41px 0 45px;
+    background-color: #1F1F1F;
+    &-content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &-desc{
+        @include text($rob, normal, 400, 15px, 25px, $milk);
+      }
+      &-link{
+        @include text($rob, normal, 400, 15px, 25px, $milk);
+        text-decoration: underline;
+        transition: 0.2s;
+        &:hover{
+          color: white;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}

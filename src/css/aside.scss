@@ -1,0 +1,52 @@
+.aside{
+  padding: 144px 0 42px;
+  position: fixed;
+  background-color: $black;
+  width: 96px;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  height: 100vh;
+  row-gap: 240px;
+  align-items: center;
+  z-index: 6;
+  &__title{
+    position: relative;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $milk;
+    &::before{
+      content: "";
+      width: 75px;
+      height: 1px;
+      position: absolute;
+      left: -100px;
+      top: 50%;
+      transform: translate(-50% -50%);
+      background-color: $milk;
+    }
+  }
+  &__menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+  }
+  &__icon{
+    color: $milk;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1320px) {
+  .aside{
+    display: none;
+  }
+}

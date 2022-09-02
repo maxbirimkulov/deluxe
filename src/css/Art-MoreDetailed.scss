@@ -1,0 +1,21 @@
+.moreDetailed__navBg{
+  background: url("../images/articles/moreDetailetBg.png")center/cover no-repeat;
+}
+.moreDetailed__desc{
+  padding: 88px 0 143px;
+  &-title{
+    @include text($rob, normal, 400, 30px, 0, white);
+    margin-bottom: 43px;
+  }
+  &-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  &-text{
+    @include text($rob, normal, 400, 14px, 24px, white);
+    &:last-of-type{
+      margin-bottom: 125px;
+    }
+  }
+}

@@ -1,0 +1,209 @@
+.projects{
+  position: relative;
+  margin: 93px 0 130px;
+  text-align: center;
+  &__title{
+    @include text($gar, normal, 700, 40px, 45px, $milk)
+  }
+  &__line{
+    margin: 23px 0 34px;
+    border-radius: 50px;
+    background-color: $milk;
+    border: 1px solid $milk;
+  }
+  &__cards{
+    column-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__card{
+    width: calc(33.33333% - 20px);
+    z-index: 6;
+    &-title{
+      @include text($gar, normal, 700, 16px, 18px, white);
+      margin: 26px 0 7px;
+    }
+    &-subtitle{
+      @include text($gar, normal, 400, 14px, 16px, white);
+      margin-bottom: 34px;
+    }
+  }
+  &__btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 75px;
+    &-btn{
+      margin-top: 54px;
+      background-color: $black;
+      width: 220px;
+      min-height: 62px;
+      border: 1px solid $milk;
+      border-radius: 5px;
+      @include text($gar, normal, 400, 14px, 16px, $milk);
+      transition: 0.3s;
+      cursor: pointer;
+      &_active{
+        background-color: $milk;
+        color: $black;
+      }
+      &:hover {
+        background-color: $milk;
+        color: $black;
+        transition: 0.3s;
+      }
+    }
+  }
+  &__after{
+    position: absolute;
+    right: 0;
+    bottom: 270px;
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 105px;
+    background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.65) -43.79%, rgba(222, 211, 109, 0) 52.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: .7s;
+    &:hover {
+      transition: .7s;
+      background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.75) -43.79%, rgba(222, 211, 109, 0.2) 52.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  &__before{
+    position: absolute;
+    left: 0;
+    top: 705px;
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 105px;
+    background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.65) -43.79%, rgba(222, 211, 109, 0) 52.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: .7s;
+    z-index: 1;
+    &:hover {
+      transition: .7s;
+      background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.75) -43.79%, rgba(222, 211, 109, 0.2) 52.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1320px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1025px) {
+
+}
+
+@media (max-width: 992px) {
+  .projects__btns {
+
+    column-gap: 50px;
+  }
+  .projects__btns-btn {
+    width: 190px;
+    min-height: 58px;
+  }
+}
+
+@media (max-width: 876px) {
+  .projects {
+    margin: 70px 0 100px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__card{
+    width: calc(50% - 15px);
+  }
+  .projects__btns {
+
+    column-gap: 25px;
+  }
+  .projects__btns-btn{
+    margin-top: 30px;
+  }
+  .projects__btns-btn {
+    width: 175px;
+    min-height: 55px;
+  }
+  .projects {
+    margin: 60px 0 70px;
+  }
+}
+
+
+@media (max-width: 676px) {
+  
+}
+
+@media (max-width: 576px) {
+  .projects {
+    margin: 30px 0 50px;
+  }
+  .projects__cards{
+    column-gap: 20px;
+  }
+  .projects__card{
+    width: calc(50% - 10px);
+  }
+  .projects__card-subtitle {
+
+    margin-bottom: 25px;
+  }
+  .projects__card-title {
+    margin: 10px 0 7px;
+  }
+  .projects__btns-btn {
+    margin-top: 20px;
+  }
+  .projects__before{
+    display: none;
+  }
+  .projects__after{
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .projects__card{
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  
+}
+
+@media (max-width: 325px) {
+  
+}

@@ -1,0 +1,462 @@
+.repair__home {
+  padding: 131px 0 8px;
+  text-align: center;
+  background: url("../images/repair/homeBg.png") center/cover no-repeat;
+
+  &-desc {
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  &-title {
+    font-family: $gar;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin: 5px 0 93px;
+  }
+
+  &-text {
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9F9F9F;
+  }
+}
+
+.repair__projects {
+  position: relative;
+  padding: 83px 0 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  &-subtitle {
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+
+    &:last-of-type {
+      margin-top: 25px;
+    }
+  }
+
+  &-title {
+    font-family: $gar;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: $milk;
+    margin: 83px 0 -4px;
+  }
+
+  &-before {
+    position: absolute;
+    left: 0;
+    top: 1020px;
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 105px;
+    background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.65) -43.79%, rgba(222, 211, 109, 0) 52.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: .7s;
+    z-index: 1;
+
+    &:hover {
+      transition: .7s;
+      background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.75) -43.79%, rgba(222, 211, 109, 0.2) 52.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}
+
+.repair__payment {
+  padding: 154px 0 20px;
+
+  &-title {
+    font-family: $gar;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    color: $milk;
+    text-align: center;
+    margin-bottom: 55px;
+
+    &:last-of-type {
+      margin: 133px 0 59px;
+    }
+  }
+
+  &-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 101px;
+  }
+
+  &-box {
+    max-width: 552px;
+
+    &:last-of-type {
+      max-width: 517px;
+    }
+
+    &-text {
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFFFFF;
+    }
+  }
+
+  &-percent {
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-right: 10px;
+
+    &-text {
+      margin: 12px 0 17px;
+    }
+  }
+
+  &-table {
+    border-collapse: collapse;
+    width: 1170px;
+    height: 369px;
+    margin-bottom: 26px;
+
+    &-block {
+      display: flex;
+      margin-bottom: 16px;
+      border-radius: 5px;
+    }
+
+    &-btn {
+      width: 600px;
+      height: 60px;
+      padding: 21px 134px 21px 133px;
+      background-color: $black;
+      border: 1px solid $milk;
+      font-family: $gar;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      color: $milk;
+
+      &:first-of-type {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+
+      &:last-of-type {
+        padding: 21px 122px;
+        background-color: $black;
+        border: 1px solid $milk;
+        color: $milk;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+
+        &-active {
+          background-color: #EFEFEF;
+        }
+      }
+    }
+
+    td, th {
+      width: 291px;
+      height: 50px;
+      text-align: center;
+      border-bottom: 1px solid #E6E6E6;
+      background-color: #EFEFEF;
+      font-family: 'Garamond';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      color: #191919;
+
+      &:nth-of-type(even) {
+        background-color: rgba(229, 229, 229, 049);
+      }
+
+      .tmain {
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.repair__rate {
+  padding: 226px 0 20px;
+
+  &-title {
+    font-family: $gar;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: #E1DECE;
+    margin-bottom: 30px;
+  }
+
+  &-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+  }
+
+  &-card {
+    position: relative;
+    width: 270px;
+    height: 665px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 11px 0 13px;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: .3s;
+    }
+
+    &-head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: $milk;
+      height: 63px;
+      margin-bottom: 12px;
+
+      &-text {
+        font-family: $rob;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #191919;
+        margin-bottom: 5px;
+      }
+    }
+
+    &-title {
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      color: #191919;
+    }
+
+    &-text {
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 12px;
+      text-align: center;
+      color: #191919;
+    }
+
+    &-price {
+      display: flex;
+      justify-content: center;
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      color: #191919;
+      margin: 10px 0 20px;
+    }
+
+    &-subtitle {
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 12px;
+      text-align: center;
+      color: #191919;
+    }
+
+    &-desc {
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 20px;
+      color: #000000;
+      margin: 9px 23px 64px 18px;
+    }
+
+    &-btn {
+      position: absolute;
+      left: 50%;
+      bottom: 13px;
+      transform: translate(-50%, 0);
+      width: 220px;
+      height: 47px;
+      padding: 16px 66px 15px 65px;
+      border-radius: 5px;
+      border: none;
+      background-color: $black;
+      font-family: $gar;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.repair__about {
+  padding: 227px 0 20px;
+
+  &-title {
+    font-family: $gar;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: $milk;
+
+    &:last-of-type {
+      margin: 121px 0 79px;
+    }
+  }
+
+  &-main {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 39px;
+  }
+
+  &-block {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    width: calc(55% - 20px);
+
+    &-img {
+      width: calc(45% - 20px);
+    }
+  }
+
+  &-desc {
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-align: start;
+
+    &:nth-of-type(2) {
+      margin: 30px 0;
+    }
+
+    &:last-of-type {
+      margin-top: 30px;
+    }
+  }
+
+  &-btns {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(20px);
+    display: flex;
+    column-gap: 14px;
+    z-index: 10;
+  }
+
+  &_btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.43);
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+      background-color: $milk;
+      transition: 0.2s;
+    }
+  }
+}
+
+.repair__end {
+  padding: 200px 0 76px;
+
+  &-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 100px;
+  }
+
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+
+    &:nth-of-type(even) {
+      max-width: 570px;
+    }
+
+    &-img {
+      max-width: 65px;
+      min-height: 65px;
+    }
+
+    &-title {
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+      margin: 51px 0 22px;
+    }
+
+    &-desc {
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $milk;
+      margin-bottom: 86px;
+    }
+  }
+}

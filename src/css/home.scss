@@ -1,0 +1,177 @@
+.home{
+  position: relative;
+  padding: 185px 0 249px;
+  margin-left: 96px;
+  background: url("../images/HomeBG.png") center/cover no-repeat;
+  &__title{
+    @include text($gar, normal, 700, 50px, 62px, white);
+    text-align: center;
+  }
+  &__subtitle{
+    @include text($rob, normal, 400, 20px, 32px, white);
+    text-align: center;
+    margin: 22px 0 10px;
+  }
+  &__btn{
+    padding: 23px 50px;
+    background: white;
+    border-radius: 50px;
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #191919;
+    display: block;
+    margin: 0 auto;
+    border: none;
+  }
+  &__logo{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+  }
+  &__after{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+
+    font-family: $rob;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 105px;
+    background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.65) -43.79%, rgba(222, 211, 109, 0) 52.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: .7s;
+    &:hover{
+      transition: .7s;
+      background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.75) -43.79%, rgba(222, 211, 109, 0.2) 52.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}
+
+
+@media (max-width: 1440px) {
+  
+}
+
+@media (max-width: 1320px) {
+  .home{
+    margin-left: 0;
+    &__logo{
+      top: 0;
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 992px) {
+  .home {
+    padding: 160px 0 220px;
+  }
+}
+
+@media (max-width: 876px) {
+  .home__title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+  .home__btn {
+    padding: 20px 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__title {
+    font-size: 37px;
+    line-height: 50px;
+  }
+  .home {
+    padding: 140px 0 200px;
+  }
+  .home__subtitle {
+    font-size: 19px;
+  }
+  .home__logo{
+    top: -20px;
+    svg{
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 676px) {
+  
+}
+
+@media (max-width: 576px) {
+  .home__title {
+    font-size: 33px;
+    line-height: 45px;
+  }
+  .home__subtitle{
+    font-size: 18px;
+    br{
+      display: none;
+    }
+    margin: 10px 0 10px;
+  }
+  .home {
+    padding: 130px 0 160px;
+  }
+  .home__after{
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .home__title {
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .home__subtitle {
+    font-size: 16px;
+    margin: 10px 0 10px;
+  }
+  .home {
+    padding: 130px 0 125px;
+  }
+  .home__btn {
+    padding: 17px 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  .home__title {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .home__logo{
+    top: -25px;
+    svg{
+      width: 90px;
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  
+}

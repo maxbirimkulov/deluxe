@@ -1,0 +1,72 @@
+.articles__navBg {
+  background: url("../images/articles/articlesBg.png") center/cover no-repeat;
+}
+
+.articles__gallery {
+  padding: 92px 0 172px;
+
+  &-block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 61px;
+    justify-content: center;
+    margin-bottom: 132px;
+  }
+
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 370px;
+    column-gap: 19px;
+  }
+
+  &-title {
+    @include text($gar, normal, 400, 20px, 0, white);
+    margin-top: 36px;
+  }
+
+  &-desc {
+    @include text($rob, normal, 400, 14px, 22px, white);
+    margin: 18px 0 26px;
+  }
+
+  &-line {
+    width: 286px;
+    height: 1px;
+    background-color: $milk;
+    margin-top: 8px;
+  }
+
+  &-link {
+    @include text($gar, normal, 400, 14px, 0, $milk);
+    text-decoration: underline;
+    transition: 0.2s;
+    &:hover{
+      color: white;
+      transition: 0.2s;
+    }
+  }
+
+  &-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-btn {
+      @include text($gar, normal, 400, 14px, 0, $milk);
+      background-color: $black;
+      width: 220px;
+      max-height: 62px;
+      border: 1px solid $milk;
+      border-radius: 5px;
+      padding: 23px 0;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover{
+        background-color: $milk;
+        color: $black;
+        transition: 0.3s;
+      }
+    }
+  }
+}

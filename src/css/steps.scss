@@ -1,0 +1,45 @@
+.steps{
+  background: url("../images/stepsBg.png") center/cover no-repeat;
+  &__title{
+    display: flex;
+    justify-content: flex-end;
+    font-family: $gar;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 120px;
+  }
+  &__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 123px;
+  }
+  &__box{
+    width: 308px;
+    &-img{
+      max-width: 65px;
+      min-height: 65px;
+    }
+    &-title{
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+      margin: 51px 0 22px;
+    }
+    &-desc{
+      font-family: $rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $milk;
+      margin-bottom: 86px;
+    }
+  }
+}

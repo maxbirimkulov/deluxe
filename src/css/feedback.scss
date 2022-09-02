@@ -1,0 +1,229 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  column-gap: 40px;
+  position: relative;
+}
+
+.feedback {
+  text-align: center;
+
+  &__title {
+    @include text($gar, normal, 400, 40px, 46px, $milk);
+    text-align: center;
+  }
+
+  &__line {
+    margin: 20px 0 34px;
+    border-radius: 50px;
+    background-color: $milk;
+    border: 1px solid $milk;
+  }
+
+  &__block {
+    display: flex;
+    width: calc(55% - 20px);
+
+    &-img {
+      margin-top: -70px;
+      width: calc(45% - 20px);
+    }
+  }
+
+  &__desc {
+    @include text($rob, normal, 400, 16px, 26px, white);
+    text-align: start;
+    margin-bottom: 33px;
+  }
+
+  &__statistics {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  &__stat {
+    color: $milk;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    margin-left: -20px;
+
+    &-rotate {
+      position: relative;
+      left: 10px;
+      @include text($rob, normal, 400, 12px, 14px, white);
+      transform: rotate(-90deg);
+    }
+
+    &-title {
+      @include text($rob, normal, 500, 45px, 53px, $milk);
+      text-transform: uppercase;
+      flex-grow: 0;
+      margin: 0 5px;
+    }
+
+    &-text {
+      @include text($rob, normal, 400, 12px, 14px, white);
+      text-align: start;
+      text-transform: uppercase;
+    }
+  }
+
+  &__signature {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 100px;
+    align-items: center;
+
+    &-btns {
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+      transform: translate(20px);
+      display: flex;
+      column-gap: 14px;
+      z-index: 10;
+    }
+
+    &_btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.43);
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: $milk;
+        transition: 0.3s;
+      }
+
+      &-active {
+        background-color: $milk;
+      }
+    }
+
+    &-text {
+      @include text($rob, normal, 400, 16px, 25px, $milk);
+      font-family: 'Segoe Script', sans-serif;
+      text-transform: capitalize;
+    }
+
+    &-sign {
+      max-width: 84px;
+      max-height: 67px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 75px;
+    margin-bottom: 92px;
+
+    &-btn {
+      width: 220px;
+      height: 62px;
+      margin-top: 54px;
+      background-color: $black;
+      max-width: 220px;
+      max-height: 62px;
+      border: 1px solid $milk;
+      border-radius: 5px;
+      color: $milk;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover{
+        background-color: $milk;
+        color: $black;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .swiper{
+    padding-bottom: 70px;
+  }
+  .feedback__statistics{
+    position: absolute;
+    z-index: 200;
+    left: 0;
+    bottom: -35px;
+  }
+  .feedback__desc {
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .feedback__signature{
+    position: absolute;
+    z-index: 200;
+    right: 0;
+    bottom: -35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .swiper{
+    padding-bottom: 270px;
+  }
+  .feedback__statistics{
+    position: absolute;
+    z-index: 200;
+    left: 0;
+    bottom: -255px;
+  }
+  .feedback__desc {
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .feedback__signature{
+    position: absolute;
+    z-index: 200;
+    right: 0;
+    bottom: -255px;
+  }
+  .feedback__desc{
+    br{
+      display: none;
+    }
+  }
+  .feedback__desc:not(:first-child) {
+    position: absolute;
+    margin-bottom: 25px;
+    left: 0;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .feedback__desc:nth-child(3) {
+    position: absolute;
+    bottom: -100px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

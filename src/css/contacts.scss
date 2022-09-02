@@ -1,0 +1,53 @@
+.contacts__navBg{
+  background: url("../images/contacts/contactsHomeBg.png") center/cover no-repeat;
+}
+.contacts__instagram{
+  padding: 76px 0 112px;
+  &-block{
+    padding-top: 57px;
+    text-align: center;
+    width: 1170px;
+    height: 595px;
+    background-color: $milk;
+    &-title{
+      @include text($rob, normal, 400, 30px, 0, $black)
+    }
+  }
+  &-title{
+    @include text($rob, normal, 400, 30px, 0, white);
+    margin: 81px 0 15px;
+  }
+  &-info{
+    @include text($rob, normal, 400, 20px, 32px, $milk);
+    &:last-of-type{
+      margin: 25px 0 116px;
+    }
+  }
+  &-boxes{
+    display: flex;
+  }
+  &-box{
+    &:first-of-type{
+      width: calc(45% - 10px);
+    }
+    width: calc(55% - 10px);
+    &-title{
+      @include text($rob, normal, 400, 30px, 0, white)
+    }
+    &-text{
+      @include text($rob, normal, 400, 20px, 36px, $milk);
+      font-family: "Segoe Script", sans-serif;
+      margin-top: 83px;
+      text-transform: capitalize;
+    }
+  }
+  &-icons{
+    display: flex;
+    column-gap: 26px;
+    margin-top: 49px;
+  }
+  &-icon{
+    color: $milk;
+    font-size: 22px;
+  }
+}
